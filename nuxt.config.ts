@@ -4,9 +4,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss', '@nuxt/icon'],
   nitro: {
-    preset: 'netlify'
+    preset: 'netlify-static' // Changed from 'netlify'
   },
-  
   // If you want SPA mode (client-side only)
   ssr: false,
   
