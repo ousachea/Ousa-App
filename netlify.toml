@@ -9,14 +9,3 @@
   from = "/*"
   to = "/index.html"
   status = 200
-  force = false
-
-# Alternative for SPA mode
-# [[redirects]]
-#   from = "/*"
-#   to = "/200.html"
-#   status = 200
-
-# For server-side rendering
-[functions]
-  directory = ".output/server"
