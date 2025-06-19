@@ -4,16 +4,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss', '@nuxt/icon'],
   nitro: {
-    preset: 'netlify-static' // Changed from 'netlify'
-  },
-  // If you want SPA mode (client-side only)
-  ssr: false,
-  
-  // Generate a fallback page for 404s
-  generate: {
-    fallback: true
-  },
-
-  // Other config options...
-  devtools: { enabled: true }
+    output: {
+      dir: 'output',
+      publicDir: 'output/public'
+    }
+  }
 });
