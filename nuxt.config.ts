@@ -4,9 +4,10 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss', '@nuxt/icon'],
   nitro: {
-    output: {
-      dir: 'output',
-      publicDir: 'output/public'
-    }
+    preset: 'netlify'
+  },
+  ssr: false, // This makes it a SPA
+  generate: {
+    routes: ['/'] // Add your routes here
   }
 });
