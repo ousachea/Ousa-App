@@ -6,8 +6,5 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'netlify'
   },
-  ssr: false, // This makes it a SPA
-  generate: {
-    routes: ['/'] // Add your routes here
-  }
+  ssr: true // This enables SSR
 });
