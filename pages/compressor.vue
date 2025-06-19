@@ -1,6 +1,7 @@
 <!-- pages/compressor.vue -->
 <template>
-    <GlobalNavigator />
+      <GlobalNavigator />
+
   <div class="compressor-body">
     <div class="compressor-container">
       <div class="header">
